@@ -9,6 +9,7 @@ const PORTFOLIO_DATA = [
     project: 'SOCIETY',
     category: 'Web3 Community',
     badgeClass: 'badge-community',
+    logo: 'assets/images/logo-society.png',
     description:
       'Lead end-to-end community operations for SOCIETY, ensuring all member initiatives align with the project\'s overarching vision. Direct and mentor the moderation team while fostering a cohesive, engaged, and goal-oriented community environment.',
     icon: '👥',
@@ -18,8 +19,9 @@ const PORTFOLIO_DATA = [
     project: 'GoDark',
     category: 'DEX',
     badgeClass: 'badge-dex',
+    logo: 'assets/images/logo-godark.jpg',
     description:
-      'Created educational & promotional content on X (Twitter) that significantly boosted project visibility and brand awareness. Drove community growth through engaging Web3 campaigns and active ecosystem support. Contributed strategic feedback to continuously refine community engagement strategies.',
+      'Created educational & promotional content on X (Twitter) that significantly boosted project visibility and brand awareness. Drove community growth through engaging Web3 campaigns and active ecosystem support.',
     icon: '🖊️',
   },
   {
@@ -27,6 +29,7 @@ const PORTFOLIO_DATA = [
     project: 'NeoSoul',
     category: 'AI Agent Economy',
     badgeClass: 'badge-ai',
+    logo: 'assets/images/logo-neosoul.jpg',
     description:
       'Produced creative social media content to boost brand visibility, drive user acquisition, and expand community awareness. Collaborated with teams to deliver clear project updates while positively representing the brand across the Web3 ecosystem.',
     icon: '⚡',
@@ -36,6 +39,7 @@ const PORTFOLIO_DATA = [
     project: 'Polana Network',
     category: 'Layer 0',
     badgeClass: 'badge-layer0',
+    logo: 'assets/images/logo-polana.png',
     description:
       'Delivered project updates, campaigns, and educational content on X (Twitter) to expand project reach. Built cross-community relationships and supported strategic initiatives to drive ecosystem growth and engagement.',
     icon: '📢',
@@ -45,6 +49,7 @@ const PORTFOLIO_DATA = [
     project: 'MECCA',
     category: 'Crypto App',
     badgeClass: 'badge-crypto',
+    logo: 'assets/images/logo-mecca.jpg',
     description:
       'Delivered project updates, campaigns, and educational content on X (Twitter) to expand project reach. Built cross-community relationships and supported strategic initiatives to drive ecosystem growth and engagement.',
     icon: '🌍',
@@ -79,7 +84,10 @@ function renderNavbar() {
   const navHTML = `
     <header class="navbar" role="banner">
       <div class="container">
-        <a href="index.html" class="nav-logo">Putri Shreya</a>
+        <a href="index.html" class="nav-logo" aria-label="Putri Shreya — Home">
+          <div class="nav-monogram">PS</div>
+          <span class="nav-logo-text">Putri Shreya</span>
+        </a>
         <nav role="navigation" aria-label="Main navigation">
           <ul class="nav-links" id="nav-links">
             ${NAV_ITEMS.map(item => {
@@ -132,11 +140,22 @@ function renderPortfolioCards() {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
 
-  grid.innerHTML = PORTFOLIO_DATA.map(item => `
-    <article class="portfolio-card animate-fade-up">
-      <div class="portfolio-badge ${item.badgeClass}">
-        <span>${item.icon}</span>
-        <span>${item.category}</span>
+  grid.innerHTML = PORTFOLIO_DATA.map((item, idx) => `
+    <article class="portfolio-card animate-fade-up" style="animation-delay: ${idx * 0.08}s">
+      <div class="portfolio-card-header">
+        <div class="portfolio-logo-wrap">
+          <img
+            src="${item.logo}"
+            alt="${item.project} logo"
+            class="portfolio-logo"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+        </div>
+        <div class="portfolio-badge ${item.badgeClass}">
+          <span>${item.icon}</span>
+          <span>${item.category}</span>
+        </div>
       </div>
       <div class="portfolio-role">${item.role}</div>
       <h3>${item.project}</h3>

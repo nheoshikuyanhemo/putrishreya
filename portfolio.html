@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
   <div class="bg-orbs" aria-hidden="true">
     <div class="bg-orb bg-orb-1"></div>
     <div class="bg-orb bg-orb-2"></div>
@@ -21,22 +22,49 @@
   </div>
   <div class="bg-noise" aria-hidden="true"></div>
 
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c.552 0 1 .448 1 1v2m0 4c3.866 0 7-3.134 7-7v2c0 4.97-4.03 9-9 9v2c-4.411 0-8-3.589-8-8h2c0 3.309 2.691 6 6 6z"/></svg>
+  </button>
+
   <div id="navbar-placeholder"></div>
 
   <main class="page-wrapper">
-
     <section class="section">
       <div class="container">
-
         <!-- Header -->
         <div class="section-header animate-fade-up">
           <span class="badge-label">Experience</span>
-          <h2>Explore My Work</h2>
-          <p>A track record of scaling Web3 communities and building brand presence across the blockchain ecosystem.</p>
+          <h2>A track record of scaling Web3 communities and building brand presence</h2>
+          <p>My core Web3 ambassador experiences across global blockchain ecosystems.</p>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements-grid animate-fade-up delay-1">
+          <div class="achievement-card animate-fade-up" style="animation-delay: 0.1s">
+            <div class="achievement-icon">👥</div>
+            <div class="achievement-title" data-target="10000">0</div>
+            <div class="achievement-subtitle">Community members managed</div>
+          </div>
+          <div class="achievement-card animate-fade-up" style="animation-delay: 0.2s">
+            <div class="achievement-icon">🚀</div>
+            <div class="achievement-title" data-target="50">0</div>
+            <div class="achievement-subtitle">Content pieces created</div>
+          </div>
+          <div class="achievement-card animate-fade-up" style="animation-delay: 0.3s">
+            <div class="achievement-icon">🌐</div>
+            <div class="achievement-title" data-target="6">0</div>
+            <div class="achievement-subtitle">Web3 projects</div>
+          </div>
+          <div class="achievement-card animate-fade-up" style="animation-delay: 0.4s">
+            <div class="achievement-icon">🌟</div>
+            <div class="achievement-title" data-target="5">0</div>
+            <div class="achievement-subtitle">Years in Web3</div>
+          </div>
         </div>
 
         <!-- Portfolio Grid -->
-        <div id="portfolio-grid" class="portfolio-grid"></div>
+        <div id="portfolio-grid" class="portfolio-grid animate-fade-up delay-2" style="margin-top: 32px;"></div>
 
         <!-- CTA -->
         <div class="animate-fade-up" style="text-align: center; margin-top: 64px; padding: 48px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl);">
@@ -49,15 +77,26 @@
             <a href="about.html" class="btn btn-ghost btn-lg">Learn More</a>
           </div>
         </div>
-
       </div>
     </section>
-
   </main>
 
   <div id="footer-placeholder"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="assets/js/socials.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#c9956a" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.25, "random": true },
+        "size": { "value": 2.5, "random": true },
+        "line_link": { "enable": true, "distance": 150, "color": "#c9956a", "opacity": 0.15, "width": 1 }
+      }
+    });
+  </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Putri Shreya</title>
-  <meta name="description" content="About Putri Shreya — Web3 Enthusiast & Content Creator with a track record in scaling blockchain ecosystems.">
+  <meta name="description" content="About Putri Shreya — Web3 Community Leader, Brand Ambassador. 6+ years scaling blockchain ecosystems through community management and content creation.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c9956a'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%230d0b0f'%3EPS%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
   <div class="bg-orbs" aria-hidden="true">
     <div class="bg-orb bg-orb-1"></div>
     <div class="bg-orb bg-orb-2"></div>
@@ -21,19 +22,22 @@
   </div>
   <div class="bg-noise" aria-hidden="true"></div>
 
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c.552 0 1 .448 1 1v2m0 4c3.866 0 7-3.134 7-7v2c0 4.97-4.03 9-9 9v2c-4.411 0-8-3.589-8-8h2c0 3.309 2.691 6 6 6z"/></svg>
+  </button>
+
   <div id="navbar-placeholder"></div>
 
   <main class="page-wrapper">
-
     <section class="section">
       <div class="container">
         <div class="about-grid">
-
           <!-- Left: Photo -->
           <div class="about-image animate-fade-up">
             <img
               src="assets/images/profile.webp"
-              alt="Putri Shreya — Professional Photo"
+              alt="Putri Shreya — Professional Web3 Community Leader"
               width="340"
               height="453"
               loading="lazy"
@@ -44,59 +48,131 @@
           <div>
             <div class="animate-fade-up">
               <span class="badge-label">About Me</span>
-              <h1 style="margin-top: 12px; margin-bottom: 28px;">Professional Summary</h1>
+              <h1 style="margin-top: 12px; margin-bottom: 28px;">Putri Shreya — Web3 Community Builder</h1>
             </div>
 
             <p class="about-summary animate-fade-up delay-1">
-              Passionate Web3 Contributor with a track record in scaling blockchain ecosystems.
-              Experienced in community management across Discord and Telegram, strategic content creation,
-              and global ambassador roles. Dedicated to driving real user engagement and bridging projects
-              with active Web3 communities.
+              <strong>Passionate and dedicated Web3 contributor</strong> with experience in community management,
+              content creation, ecosystem engagement, and ambassador activities across multiple blockchain projects.
+              Skilled in building active communities, creating engaging content, managing Discord and Telegram
+              communities, and representing projects through strategic communication on social platforms.
+              Experienced in collaborating with global communities and driving user engagement within blockchain ecosystems.
             </p>
 
-            <!-- Key Features -->
-            <div class="animate-fade-up delay-2">
-              <h2 style="font-size: 1.4rem; margin-bottom: 8px;">Key Features</h2>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">
-                What I bring to every project.
-              </p>
-              <div id="key-features" class="features-grid"></div>
-            </div>
+            <!-- Timeline -->
+            <div class="timeline animate-fade-up delay-2">
+              <!-- ShowToken -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 — Present</div>
+                <div class="timeline-title">Brand Ambassador</div>
+                <div class="timeline-company">ShowToken | Blockchain × Entertainment</div>
+                <div class="timeline-content">
+                  Represented ShowToken on X (Twitter) and Instagram by communicating the project's vision,
+                  ecosystem, and ongoing development. Created educational and narrative-driven content
+                  explaining how ShowToken is building at the intersection of blockchain and entertainment.
+                </div>
+              </div>
 
-            <!-- Expertise -->
-            <div class="animate-fade-up delay-3" style="margin-top: 40px; padding-top: 40px; border-top: 1px solid var(--border-subtle);">
-              <h3 style="font-size: 1rem; margin-bottom: 16px; font-family: 'DM Sans', sans-serif; font-weight: 510; color: var(--text-secondary);">Areas of Expertise</h3>
-              <div class="expertise-tags">
-                <span class="expertise-tag">Community Management</span>
-                <span class="expertise-tag">Content Strategy</span>
-                <span class="expertise-tag">Discord &amp; Telegram</span>
-                <span class="expertise-tag">Ambassador Programs</span>
-                <span class="expertise-tag">Social Media (X)</span>
-                <span class="expertise-tag">Web3 Marketing</span>
-                <span class="expertise-tag">User Acquisition</span>
-                <span class="expertise-tag">Brand Building</span>
+              <!-- NeoSoul -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 — 2023</div>
+                <div class="timeline-title">Loyal Builder & KOC</div>
+                <div class="timeline-company">NeoSoul | AI Agent Economy</div>
+                <div class="timeline-content">
+                  Promoted NeoSoul and its AI Agent ecosystem primarily through X (Twitter). Created and
+                  distributed content to increase project awareness, engagement, and community visibility.
+                </div>
+              </div>
+
+              <!-- Society -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 — 2022</div>
+                <div class="timeline-title">Operational Community Leader</div>
+                <div class="timeline-company">Society | All-in-One Crypto</div>
+                <div class="timeline-content">
+                  Managed day-to-day community operations, coordinated activities, and supported planning
+                  and execution of community programs and events.
+                </div>
+              </div>
+
+              <!-- GoDark -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020 — 2021</div>
+                <div class="timeline-title">Early Contributor & Content Creator</div>
+                <div class="timeline-company">GoDark | Web3 Project</div>
+                <div class="timeline-content">
+                  Created and published educational and promotional content on X (Twitter). Increased
+                  project visibility through engaging social media campaigns.
+                </div>
+              </div>
+
+              <!-- Polana -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-title">Hype Herald</div>
+                <div class="timeline-company">Polana Network | Layer 0</div>
+                <div class="timeline-content">
+                  Delivered project updates, campaigns, and educational content on X (Twitter) to expand
+                  project reach and build cross-community relationships.
+                </div>
+              </div>
+
+              <!-- MECCA -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019</div>
+                <div class="timeline-title">Community Administrator</div>
+                <div class="timeline-company">MECCA | Web3 Project</div>
+                <div class="timeline-content">
+                  Managed Discord and Telegram communities. Answered community questions and provided
+                  timely support to members.
+                </div>
               </div>
             </div>
 
+            <!-- Skills -->
+            <div class="animate-fade-up delay-3" style="margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border-subtle);">
+              <span class="badge-label">Core Skills</span>
+              <h3 style="margin-top: 16px; margin-bottom: 24px; font-size: 1.1rem; color: var(--text-secondary);">Areas of Expertise</h3>
+              <div id="skills-container" class="skills-section"></div>
+            </div>
+
             <!-- CTA -->
-            <div class="animate-fade-up delay-4" style="margin-top: 40px; padding: 32px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl);">
+            <div class="animate-fade-up delay-4" style="margin-top: 48px; padding: 32px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl);">
               <h3 style="margin-bottom: 10px;">Let's work together</h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6;">
-                I'm always open to exploring new opportunities in the Web3 space. Whether it's community building, content creation, or ambassador roles — let's connect.
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6; max-width: 460px;">
+                I'm always open to exploring new opportunities in the Web3 space. Whether it's community building,
+                content creation, or ambassador roles — let's connect.
               </p>
               <a href="contact.html" class="btn btn-primary">Get in Touch</a>
             </div>
-
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <div id="footer-placeholder"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="assets/js/socials.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#c9956a" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.25, "random": true },
+        "size": { "value": 2.5, "random": true },
+        "line_link": { "enable": true, "distance": 150, "color": "#c9956a", "opacity": 0.15, "width": 1 }
+      }
+    });
+  </script>
 </body>
 </html>

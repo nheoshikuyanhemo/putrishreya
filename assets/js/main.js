@@ -113,7 +113,7 @@ function renderNavbar() {
     <header class="navbar" role="banner">
       <div class="container">
         <a href="index.html" class="nav-logo" aria-label="Putri Shreya — Home">
-          <div class="nav-monogram">PS</div>
+          <img class="nav-avatar" src="assets/images/profile.png" alt="Putri Shreya" width="34" height="34">
           <span class="nav-logo-text">Putri Shreya</span>
         </a>
         <nav role="navigation" aria-label="Main navigation">
@@ -143,20 +143,10 @@ function renderFooter() {
     `<a href="${s.url}" target="_blank" rel="noopener noreferrer" aria-label="${s.label}">${s.icon}</a>`
   ).join('');
 
-  const linksHTML = NAV_ITEMS.map(item =>
-    `<li><a href="${item.href}">${item.label}</a></li>`
-  ).join('');
-
   placeholder.outerHTML = `
     <footer class="footer">
-      <div class="container">
-        <div class="footer-left">
-          <span class="footer-name">Putri Shreya</span>
-          <span class="footer-copy">&copy; ${new Date().getFullYear()} — All rights reserved</span>
-        </div>
-        <ul class="footer-links">${linksHTML}</ul>
-        <div class="footer-social">${socialHTML}</div>
-      </div>
+      <div class="social-icons">${socialHTML}</div>
+      <p class="copyright">Putri Shreya © 2026 — All rights reserved</p>
     </footer>
   `;
 }
